@@ -1,0 +1,647 @@
+<link href="dash.css" rel="stylesheet" type="text/css" />
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>task management system</title>
+  <link href="dash.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- container start -->
+  <div class="container rounded">
+    <!-- left start -->
+    <div class="left rounded shadow  bg-light ">
+      <!-- header start -->
+      <header>
+        <!-- logo start -->
+        <div class="logo">
+          <h2>Menu</h2>
+          <div class="close">
+            <span class="material-symbols-outlined">
+            </span>
+          </div>
+        </div>
+        <!-- nav start -->
+        <nav>
+          <ul>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined full">
+                  <i class="ri-home-2-line"></i>
+                </span>
+                <span class="title">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined">
+                  <i class="ri-layout-masonry-fill"></i>
+                </span>
+                <span class="title">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined">
+                  <i class="ri-stack-line"></i>
+                </span>
+                <span class="title">All Tasks</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined">
+                  <i class="ri-file-list-3-line"></i>
+                </span>
+                <span class="title">Primary</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined">
+                  <i class="ri-hourglass-line"></i>
+                </span>
+                <span class="title">Recent</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined">
+                  <i class="ri-calendar-event-line"></i>
+                </span>
+                <span class="title">Date</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined">
+                  <i class="ri-calendar-check-fill"></i>
+                </span>
+                <span class="title">Completed</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined">
+                  <i class="ri-layout-top-2-line"></i>
+                </span>
+                <span class="title">Best day</span>
+              </a>
+            </li>
+
+            <h2 class="left-nav-heading">All label</h2>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined">
+                  <i class="ri-star-line"></i>
+                </span>
+                <span class="title">Starred</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined">
+                  <i class="ri-bookmark-3-line"></i>
+                </span>
+                <span class="title">Important</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined">
+                  <i class="ri-draft-line"></i>
+                </span>
+                <span class="title">Draft</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined">
+                  <i class="ri-delete-bin-line"></i>
+                </span>
+                <span class="title">Bin</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined">
+                  <i class="ri-calendar-2-fill"></i>
+                </span>
+                <span class="title">Calender</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-symbols-outlined">
+                  <i class="ri-question-line"></i>
+                </span>
+                <span class="title">Helps and Feedback</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- nav end -->
+      </header>
+      <!-- header end -->
+      <!-- upgrade start -->
+      <div class="upgrade rounded p-4 ">
+        <h4>Upgrade to <bold>PRO</bold> for<br> more features</h4>
+        <div class="upBtn">
+          <button>Upgrade</button>
+        </div>
+      </div>
+      <!-- upgrade end -->
+    </div>
+    <!-- left end -->
+    <!-- right start -->
+    <div class="right sticky-top">
+      <!-- top start -->
+      <div class="top rounded-right sticky-top">
+        <!-- searchBx start -->
+        <a class="navbar-brand px-4"><img style="height:40"
+              src="https://i.postimg.cc/JhZ3QkL3/logo.png" /></a>
+        <div class="searchBox">
+          
+          <div class="inputBox mx-4">
+            <span class="material-symbols-outlined searchOpen">
+              <i class="ri-search-2-line"></i>
+            </span>
+            <input type="text" placeholder="Search"></i>
+            <span class="material-symbols-outlined searchClose">
+              <i class="ri-close-circle-fill p-2"></i>
+            </span>
+          </div>
+        </div>
+        <!-- searchBx end -->
+        <!-- user start -->
+        <div class="user">
+          <span class="material-symbols-outlined">
+            <i class="ri-notification-2-line"></i>
+          </span>
+          <div class="userImg p-3">
+            <img src="profile-img.jpg" alt="mdo" width="35" height="35" class="rounded-circle">
+          </div>
+          <h2>Dhruv's Code<br><span class="admin">Administrator</span></h2>
+          <div class="box">
+            <span class="material-symbols-outlined">
+              <i class="ri-menu-3-line pt-2 px-4" style="font-weight:800; height:50%;"></i>
+            </span>
+          </div>
+          <div class="toggle">
+            <span class="material-symbols-outlined">
+            </span>
+          </div>
+        </div>
+        <!-- user end -->
+      </div>
+      <!-- top end -->
+      <!-- main start -->
+      <main>
+        <div class="row1 d-flex">
+          <!-- projectCard start -->
+          <div class="projectCard  bg-light ">
+            <!-- projectTop start -->
+            <div class="projectTop">
+              <h2>Task Manager<br><span>Resotech</span></h2>
+              <div class="projectDots">
+                <span class="material-symbols-outlined">
+                  <i class="ri-more-line"></i>
+                </span>
+              </div>
+            </div>
+            <!-- projectTop end -->
+            <!-- projectProgress start -->
+            <div class="projectProgress">
+              <div class="process">
+                <h2>In Progress</h2>
+              </div>
+              <div class="priority px-0">
+                <h2><i class="ri-star-fill"></i></h2>
+              </div>
+            </div>
+            <!-- projectProgress end -->
+            <!-- groupImg start -->
+            <div class="groupImg">
+              <a href="#">
+                <img src="https://i.postimg.cc/m2ydp04S/Profile-img.jpg" alt="img1">
+              </a>
+              <a href="#" style="--left: -10px;">
+                <img src="https://i.postimg.cc/m2ydp04S/Profile-img.jpg" alt="img2">
+              </a>
+              <a href="#" style="--left: -20px;">
+                <img src="https://i.postimg.cc/m2ydp04S/Profile-img.jpg" alt="img3">
+              </a>
+
+              <a href="#" style="--left: -30px;">
+                <span class="number">+2</span>
+              </a>
+            </div>
+            <!-- groupImg end -->
+            <!-- task start -->
+            <div class="task">
+              <h2>Task Done: <bold>30</bold> / 50</h2>
+              <span class="line"></span>
+            </div>
+            <!-- task end -->
+            <!-- due start -->
+            <div class="date">
+              <h2>Due Date: 21 January</h2>
+            </div>
+            <!-- due end -->
+          </div>
+          <!-- projectCard end -->
+          <!-- calendar start -->
+          <div class="calendar bg-light ">
+            <!-- calendarHead start -->
+            <div class="calendarHead">
+              <h2>January 2024</h2>
+              <div class="calendarIcon">
+                <span class="material-symbols-outlined">
+                  <i class="ri-arrow-left-s-line"></i>
+                </span>
+                <span class="material-symbols-outlined">
+                  <i class="ri-arrow-right-s-line"></i>
+                </span>
+              </div>
+            </div>
+            <!-- calendarHead end -->
+            <!-- calendarData start -->
+            <div class="calendarData">
+              <ul class="weeks">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+              </ul>
+              <ul class="days">
+                <li class="inactive">25</li>
+                <li class="inactive">26</li>
+                <li class="inactive">27</li>
+                <li class="inactive">28</li>
+                <li class="inactive">29</li>
+                <li class="inactive">30</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li class="active">21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li>31</li>
+                <li class="inactive">1</li>
+                <li class="inactive">2</li>
+                <li class="inactive">3</li>
+                <li class="inactive">4</li>
+                <li class="inactive">5</li>
+              </ul>
+            </div>
+            <!-- calendarData end -->
+          </div>
+          <!-- calendar end -->
+        </div>
+        <div class="row1 d-flex">
+          <!-- projectCard start -->
+          <div class="projectCard  bg-light ">
+            <!-- projectTop start -->
+            <div class="projectTop">
+              <h2>Raw Supply<br><span>Resotech</span></h2>
+              <div class="projectDots">
+                <span class="material-symbols-outlined">
+                  <i class="ri-more-line"></i>
+                </span>
+              </div>
+            </div>
+            <!-- projectTop end -->
+            <!-- projectProgress start -->
+            <div class="projectProgress">
+              <div class="process">
+                <h2>In progress</h2>
+              </div>
+              <div class="priority px-0">
+                <h2><i class="ri-star-line"></i></h2>
+              </div>
+            </div>
+            <!-- projectProgress end -->
+            <!-- groupImg start -->
+            <div class="groupImg">
+              <a href="#">
+                <img src="https://i.postimg.cc/m2ydp04S/Profile-img.jpg" alt="img1">
+              </a>
+              <a href="#" style="--left: -10px;">
+                <img src="https://i.postimg.cc/m2ydp04S/Profile-img.jpg" alt="img2">
+              </a>
+              <a href="#" style="--left: -20px;">
+                <img src="https://i.postimg.cc/m2ydp04S/Profile-img.jpg" alt="img3">
+              </a>
+              <a href="#" style="--left: -30px;">
+                <img src="https://i.postimg.cc/m2ydp04S/Profile-img.jpg" alt="img4">
+              </a>
+
+              <a href="#" style="--left: -40px;">
+                <span class="number">+1</span>
+              </a>
+            </div>
+            <!-- groupImg end -->
+            <!-- task start -->
+            <div class="task">
+              <h2>Task Done: <bold>20</bold> / 50</h2>
+              <span class="line"></span>
+            </div>
+            <!-- task end -->
+            <!-- due start -->
+            <div class="date">
+              <h2>Due Date: 12 January</h2>
+            </div>
+            <!-- due end -->
+          </div>
+          <!-- projectCard end -->
+          <!-- myTasks start -->
+          <div class="myTasks  bg-light ">
+            <!-- tasksHead start -->
+            <div class="tasksHead">
+              <h2>My Tasks</h2>
+
+              <div class="tasksDots">
+                <span class="material-symbols-outlined">
+                  <i class="ri-more-line"></i>
+                </span>
+              </div>
+            </div>
+            <!-- tasksHead end -->
+            <!-- tasks start -->
+            <div class="tasks">
+              <ul>
+                <li>
+                  <span class="tasksIconName">
+                    <span class="tasksIcon done">
+                      <span class="material-symbols-outlined">
+
+                      </span>
+                    </span>
+                    <span class="tasksName">
+                      My Task 1
+                    </span>
+                  </span>
+                  <span class="tasksStar full">
+                    <span class="material-symbols-outlined">
+                      <i class="ri-star-line"></i>
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span class="tasksIconName">
+                    <span class="tasksIcon notDone"></span>
+                    <span class="tasksName">
+                      My Task 2
+                    </span>
+                  </span>
+                  <span class="tasksStar half">
+                    <span class="material-symbols-outlined">
+                      <i class="ri-star-line"></i>
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span class="tasksIconName">
+                    <span class="tasksIcon notDone"></span>
+                    <span class="tasksName">
+                      My Task 3
+                    </span>
+                  </span>
+                  <span class="tasksStar half">
+                    <span class="material-symbols-outlined">
+                      <i class="ri-star-fill"></i>
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span class="tasksIconName">
+                    <span class="tasksIcon done">
+                      <span class="material-symbols-outlined">
+
+                      </span>
+                    </span>
+                    <span class="tasksName tasksLine">
+                      <underline>My Task 4</underline>
+                    </span>
+                  </span>
+                  <span class="tasksStar half">
+                    <span class="material-symbols-outlined">
+                      <i class="ri-star-fill"></i>
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span class="tasksIconName">
+                    <span class="tasksIcon done">
+                      <span class="material-symbols-outlined">
+
+                      </span>
+                    </span>
+                    <span class="tasksName tasksLine">
+                      My Task 5
+                    </span>
+                  </span>
+                  <span class="tasksStar full">
+                    <span class="material-symbols-outlined">
+                      <i class="ri-star-line"></i>
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span class="tasksIconName">
+                    <span class="tasksIcon notDone"></span>
+                    <span class="tasksName">
+                      My Task 6
+                    </span>
+                  </span>
+                  <span class="tasksStar half">
+                    <span class="material-symbols-outlined">
+                      <i class="ri-star-line"></i>
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span class="tasksIconName">
+                    <span class="tasksIcon notDone"></span>
+                    <span class="tasksName">
+                      My Task 7
+                    </span>
+                  </span>
+                  <span class="tasksStar half">
+                    <span class="material-symbols-outlined">
+                      <i class="ri-star-fill"></i>
+                    </span>
+                  </span>
+                </li>
+
+              </ul>
+            </div>
+            <!-- tasks ens -->
+          </div>
+          <!-- myTasks end -->
+        </div>
+        <!-- projectCard2 end -->
+
+        <!-- projectCard3 start -->
+        <div class="row1 d-flex ">
+          <!-- projectCard start -->
+          <div class="projectCard bg-light ">
+            <!-- projectTop start -->
+            <div class="projectTop">
+              <h2>Data Refining<br><span>Resotech</span></h2>
+              <div class="projectDots">
+                <span class="material-symbols-outlined">
+                  <i class="ri-more-line"></i>
+                </span>
+              </div>
+            </div>
+            <!-- projectTop end -->
+            <!-- projectProgress start -->
+            <div class="projectProgress">
+              <div class="process text-success">
+                <h2>Completed</h2>
+              </div>
+              <div class="priority px-0">
+                <h2><i class="ri-star-fill"></i></h2>
+              </div>
+            </div>
+            <!-- projectProgress end -->
+            <!-- groupImg start -->
+            <div class="groupImg">
+              <a href="#">
+                <img src="https://i.postimg.cc/m2ydp04S/Profile-img.jpg" alt="img1">
+              </a>
+              <a href="#" style="--left: -10px;">
+                <img src="https://i.postimg.cc/m2ydp04S/Profile-img.jpg" alt="img2">
+              </a>
+              <a href="#" style="--left: -20px;">
+                <img src="https://i.postimg.cc/m2ydp04S/Profile-img.jpg" alt="img3">
+              </a>
+              <a href="#" style="--left: -30px;">
+                <img src="https://i.postimg.cc/m2ydp04S/Profile-img.jpg" alt="img4">
+              </a>
+              <a href="#" style="--left: -40px;">
+                <img src="https://i.postimg.cc/m2ydp04S/Profile-img.jpg" alt="img5">
+              </a>
+
+              <a href="#" style="--left: -50px;">
+                <span class="number">+3</span>
+              </a>
+            </div>
+            <!-- groupImg end -->
+            <!-- task start -->
+            <div class="task">
+              <h2>Task Done: <bold>50</bold> / 50</h2>
+              <span class="line bg-success"></span>
+            </div>
+            <!-- task end -->
+            <!-- due start -->
+            <div class="date">
+              <h2>Complition: 1 January</h2>
+            </div>
+            <!-- due end -->
+          </div>
+          <!-- projectCard end -->
+
+          <!-- projectCard start -->
+          <div class="projectCard  bg-light  ">
+            <!-- projectTop start -->
+            <div class="projectTop">
+              <h2>Data Collection<br><span>Resotech</span></h2>
+              <div class="projectDots">
+                <span class="material-symbols-outlined">
+                  <i class="ri-more-line"></i>
+                </span>
+              </div>
+            </div>
+            <!-- projectTop end -->
+            <!-- projectProgress start -->
+            <div class="projectProgress">
+              <div class="process">
+                <h2>In Progress</h2>
+              </div>
+              <div class="priority px-0">
+                <h2><i class="ri-star-line"></i></h2>
+              </div>
+            </div>
+            <!-- projectProgress end -->
+            <!-- groupImg start -->
+            <div class="groupImg">
+              <a href="#">
+                <img src="https://i.postimg.cc/m2ydp04S/Profile-img.jpg" alt="img1">
+              </a>
+              <a href="#" style="--left: -10px;">
+                <img src="https://i.postimg.cc/m2ydp04S/Profile-img.jpg" alt="img2">
+              </a>
+              <a href="#" style="--left: -20px;">
+                <img src="https://i.postimg.cc/m2ydp04S/Profile-img.jpg" alt="img3">
+              </a>
+              <a href="#" style="--left: -30px;">
+                <span class="number">+2</span>
+              </a>
+            </div>
+            <!-- groupImg end -->
+            <!-- task start -->
+            <div class="task">
+              <h2>Task Done: <bold>40</bold> / 50</h2>
+              <span class="line"></span>
+            </div>
+            <!-- task end -->
+            <!-- due start -->
+            <div class="date">
+              <h2>Due Date: 24 December</h2>
+            </div>
+            <!-- due end -->
+          </div>
+          <!-- projectCard end -->
+
+        </div>
+        <!-- projectCard3 end -->
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
