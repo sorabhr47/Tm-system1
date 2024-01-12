@@ -1,0 +1,838 @@
+.html{
+  height: 100%;
+  width: 100%;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#99A3A4,#D7DBDD);
+}
+.container{
+  position: relative;
+  width: 100%;
+  height: 130vh;
+  background: rgba(255, 255, 255, .2);
+  backdrop-filter: blur(10px);
+  padding:1%;
+  display:flex;
+  /*overflow:hidden;*/
+}
+.container .left{
+  position: relative;
+  width: 30%;
+  background-color:#D7DBDD ;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2vw;
+
+}
+/* header start */
+.container .left header {
+  position: relative;
+  width: 100%;
+}
+.container .left header .logo {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .left header nav ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.3vw;
+}
+.container .left header nav ul li{
+  position: relative;
+  width:100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.container .left header nav ul li a{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  padding-left: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: .3s ease;
+}
+.container .left header nav ul li:first-child a,
+.container .left header nav ul li a:hover {
+  transition: 0s;
+  background:#f1f3ff;
+}
+.container .left header nav ul li a .icon{
+  content:'';
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background: #6577ff;
+  transition: .4s ease;
+}
+.container .left header nav ul li:first-child a::before,
+.container .left header nav ul li a:hover::before {
+  width: 4px;
+}
+.container .left header nav ul li a .material-symbols-outlined {
+  color: #34495E;
+  font-size: 1.7em;
+  margin-right: 10px;
+}
+.container .left header nav ul li a .title {
+  color: #515A5A;
+  font-size: 1.1em;
+}
+.container .left header nav ul li:first-child a .material-symbols-outlined,
+.container .left header nav ul li:first-child a .title,
+.container .left header nav ul li a:hover .material-symbols-outlined,
+.container .left header nav ul li a:hover .title {
+  color: #6577ff;
+  transform: scale(1.2);
+}
+.container .upgrade{
+   position: relative;
+    width:95%;
+    height:50vw; 
+    background: linear-gradient(145deg, #d488ea, #8389f9);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    overflow: hidden;
+    max-height: 15%;
+    margin-bottom:2px;
+ }
+.container .upgrade h4 {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 400;
+  padding-top:2%;
+  padding-bottom:2%
+}
+.container .upgrade .upBtn {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container .upgrade .upBtn button{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  outline:none;
+  border:none;
+  font-size: 1.2em;
+  color:#34495E;
+}
+/* left end */
+/* right start */
+/* upgrade end */
+
+/* right start */
+.container .right{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* top start */
+.container .right .top {
+  position: relative;
+
+  width: 99%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #EAECEE;
+  padding:1%;
+  margin-left:1%;
+  margin-right:1%;
+}
+/* search box*/
+.container .right .top .searchBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .right .top .searchBox .inputBox{
+  position: relative;
+  width: 18vw;
+  height:30px;
+  background: #D6EAF8;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  gap: 10px;
+  overflow: hidden;
+}
+.container .right .top .searchBx .input span {
+  color: #999;
+  cursor: pointer;
+}
+.container .right .top .searchBox .inputBox input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background: transparent;
+  margin-right: 10px;
+  font-size: 1.2em;
+  color: #000;
+}
+.container .right .top .searchBox .inputBox span.searchClose {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+}
+/* user*/
+.container .right .top .user {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .right .top .user span {
+  color: #000;
+  cursor: pointer;
+}
+.container .right .top .user .userImg {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.container .right .top .user h2 {
+  font-size: 1.1em;
+  line-height: 17px;
+  white-space: nowrap;
+  cursor: pointer;
+  justify-content:center;
+  padding-top: 11px;
+  padding-right:11px;
+}
+.container .right .top .user h2 .admin{
+  font-size: 0.8em;
+  line-height: 17px;
+  white-space: nowrap;
+  cursor: pointer;
+  justify-content:center;
+  padding-top: 11px;
+  padding-right:11px;
+  color:#5D6D7E ;
+}
+.container .right .top .user .box {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #999;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.container .right .top .user .box span {
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 600;
+  transition: all .3s ease;
+}
+/*need to check*/
+.container .right .top .user .box:hover span {
+  transform: scale(1.2);
+}
+/* user end */
+/* top end */
+/* main start */
+.container .right .main {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+}
+/* projectCard start */
+.container .right main .row1 .projectCard {
+  position: relative;
+  width: 49%;
+
+  background-color:#D7DBDD;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  /*
+  box-shadow: rgba(255, 255, 255, 0.5) 35px 35px 68px 0px,
+    inset rgba(255, 255, 255, 0.6) -8px -8px 16px 0px,
+    inset rgb(255, 255, 255) 0px 11px 28px 0px;*/
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  grid-row: 1 / 4;
+  margin: 1% 0% 0% 1%;
+}
+.container .right main  .row1 .projectCard .projectTop {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .right main  .row1 .projectCard .projectTop h2 {
+  color: #000;
+  font-size: 1.2em;
+  line-height: 18px;
+  cursor: pointer;
+}
+.container .right main  .row1 .projectCard .projectTop h2 span {
+  color: #999;
+  font-size: 0.8em;
+}
+.container .right main  .row1 .projectCard .projectTop .projectDots {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.container .right main  .row1 .projectCard .projectTop .projectDots span {
+  color: #000;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+.container .right main  .row1 .projectCard .projectProgress {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .right main  .row1 .projectCard .projectProgress .process {
+  position: relative;
+  padding: 5px 10px;
+  background: #f1f3ff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.container .right main  .row1 .projectCard .projectProgress .process h2 {
+  color: #8389f9;
+  white-space: nowrap;
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.container .right main  .row1 .projectCard .projectProgress .priority {
+  position: relative;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.container .right main  .row1 .projectCard .projectProgress .priority h2 {
+  color:#F4D03F;
+  white-space: nowrap;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+.container .right main  .row1 .projectCard .projectProgress .priority h2:hover{
+  size:30px;
+}
+.container .right main  .row1 .projectCard .groupImg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 0;
+}
+.container .right main  .row1 .projectCard .groupImg::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: rgba(0, 0, 0, .1);
+}
+.container .right main  .row1 .projectCard .groupImg a {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  left: var(--left);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .right main  .row1 .projectCard .groupImg a img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .right main  .row1 .projectCard .groupImg a:last-child {
+  border: 3px solid #999;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.container .right main  .row1 .projectCard .groupImg a:last-child span {
+  color: #999;
+  font-size: 1.2em;
+}
+.container .right main  .row1 .projectCard .task {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.container .right main  .row1 .projectCard .task h2 {
+  color: #999;
+  font-size: 1em;
+}
+.container .right main  .row1 .projectCard .task h2 bold {
+  color: #000;
+}
+.container .right main  .row1 .projectCard .task .line {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background: rgba(0, 0, 0, .1);
+  border-radius: 50px;
+  z-index: -1;
+  overflow: hidden;
+}
+.container .right main  .row1 .projectCard .task .line::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: calc(100% - 40%);
+  height: 100%;
+  background: #6577ff;
+  z-index: 1;
+  border-radius: 50px;
+}
+.container .right main  .row1 .projectCard .date {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+.container .right main  .row1 .projectCard .date h2 {
+  padding: 0px 10px;
+  border: 2px solid #F7DC6F;
+  border-radius: 5px;
+  font-size: 1.1em;
+  color: #34495E;
+}
+/* projectTop end */
+/* calendar start */
+.container .right main .calendar {
+  position: relative;
+  width: 49%;
+  background-color: #D7DBDD;;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+ /* box-shadow: rgba(255, 255, 255, 0.5) 35px 35px 68px 0px,
+    inset rgba(255, 255, 255, 0.6) -8px -8px 16px 0px,
+    inset rgb(255, 255, 255) 0px 11px 28px 0px;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin:1% 0% 0% 1%;
+
+}
+
+.container .right main .calendar .calendarHead {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .right main .calendar .calendarHead h2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  line-height: 18px;
+  color: #000;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.container .right main .calendar .calendarHead .calendarIcon {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+
+.container .right main .calendar .calendarHead .calendarIcon .material-symbols-outlined {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border: 3px solid #9fa7d6;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #9fa7d6;
+  font-size: 1.3em;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .right main .calendar .calendarData {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.container .right main .calendar .calendarData .weeks {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container .right main .calendar .calendarData .weeks li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.container .right main .calendar .calendarData .days {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 30px);
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  place-items: center;
+}
+
+.container .right main .calendar .calendarData .days li {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+
+
+.container .right main .calendar .calendarData .days li.inactive {
+  color: #999;
+}
+
+.container .right main .calendar .calendarData .days li:hover {
+  background: #999;
+  color: #fff;
+  transition: 0s;
+}
+
+.container .right main .calendar .calendarData .days li.active {
+  background: #6577ff;
+  color: #fff;
+}
+
+/* calendar end */
+
+/* myTasks start */
+.container .right main .row1 .myTasks {
+  position: relative;
+  width: 49%;
+  background-color:#D7DBDD;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  /*box-shadow: rgba(255, 255, 255, 0.5) 35px 35px 68px 0px,
+    inset rgba(255, 255, 255, 0.6) -8px -8px 16px 0px,
+    inset rgb(255, 255, 255) 0px 11px 28px 0px;*/
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  grid-row: 1 / 5;
+  grid-column: 2 / 3;
+  margin: 1% 0% 0% 1%;
+}
+
+.container .right main .row1 .myTasks .tasksHead {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.container .right main  .row1 .myTasks .tasksHead h2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  line-height: 18px;
+  color: #000;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.container .right main  .row1 .myTasks .tasksHead .tasksDots {
+  position: relative;
+  cursor: pointer;
+}
+
+.container .right main  .row1 .myTasks .tasksHead .tasksDots span {
+  color: #000;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.container .right main  .row1 .myTasks .tasks {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.container .right main  .row1 .myTasks .tasks ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.container .right main .row1  .myTasks .tasks ul li {
+  position: relative;
+  width: 100%;
+  height: calc(100% / 7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .right main  .row1 .myTasks .tasks ul li::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: rgba(0, 0, 0, .1);
+}
+
+.container .right main  .row1 .myTasks .tasks ul li:last-child::before {
+  width: 0;
+}
+
+.container .right main  .row1 .myTasks .tasks ul li .tasksIconName {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.container .right main  .row1 .myTasks .tasks ul li .tasksIconName .tasksIcon {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container .right main  .row1 .myTasks .tasks ul li .tasksIconName .tasksIcon.done {
+  color: #fff;
+  background: #69bc72;
+}
+
+.container .right main  .row1 .myTasks .tasks ul li .tasksIconName .tasksIcon.notDone {
+  background: #fff;
+  border: 3px solid #999;
+}
+
+.container .right main  .row1 .myTasks .tasks ul li .tasksIconName .tasksName {
+  position: relative;
+  color: #000;
+  cursor: pointer;
+}
+
+.container .right main  .row1 .myTasks .tasks ul li .tasksIconName .tasksName.tasksLine {
+  color: #999;
+  cursor: not-allowed;
+}
+
+.container .right main  .row1 .myTasks .tasks ul li .tasksIconName .tasksName.tasksLine::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: rgba(0, 0, 0, .3);
+}
+
+.container .right main  .row1 .myTasks .tasks ul li .tasksStar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container .right main  .row1 .myTasks .tasks ul li .tasksStar.full {
+  color: #f5c75f;
+}
+
+.container .right main  .row1 .myTasks .tasks ul li .tasksStar.half {
+  color: #f5c75f;
+}
+
+/* myTasks end */
+
+
+
+
+@media (max-width: 924px) {
+  .container .left{
+    display: none;
+  }
+  .container .right .top .user h2 {
+    display: none;
+  }
+  .container .right .top {
+    position: relative;
+    width: 99%;
+    height: 2.2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #EAECEE;
+    padding:2%;
+    margin-right:2%;
+  }
+  .container .right main .row1  {
+    position: relative;
+    width:100%;
+    height:50%;
+    background-color:#D7DBDD;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    /*
+    box-shadow: rgba(255, 255, 255, 0.5) 35px 35px 68px 0px,
+      inset rgba(255, 255, 255, 0.6) -8px -8px 16px 0px,
+      inset rgb(255, 255, 255) 0px 11px 28px 0px;*/
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 1% 0% 0% 1%;
+  }
+
+  .container .right main .row1 .projectCard{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 1% 0% 0% 1%;
+  }
+  .container .right main .row1 .calendar {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background-color: red;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+   /* box-shadow: rgba(255, 255, 255, 0.5) 35px 35px 68px 0px,
+      inset rgba(255, 255, 255, 0.6) -8px -8px 16px 0px,
+      inset rgb(255, 255, 255) 0px 11px 28px 0px;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin:1% 0% 0% 1%;
+
+  }
+  .container .right main .row1 .myTasks {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background-color:#D7DBDD;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    /*box-shadow: rgba(255, 255, 255, 0.5) 35px 35px 68px 0px,
+      inset rgba(255, 255, 255, 0.6) -8px -8px 16px 0px,
+      inset rgb(255, 255, 255) 0px 11px 28px 0px;*/
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 1% 0% 0% 1%;
+  }
+}
