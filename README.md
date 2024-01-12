@@ -9,7 +9,7 @@
 This is a (Task management system ) dashboard design using Html,css,javascript and bootstrap.
 I made this responsive for mobile with max-width of 924px.
 
-this webpage designed for CRUD (Create, Read, Update, Delete ) operations.
+This webpage designed can follow CRUD (Create, Read, Update, Delete ) operations.
 ## Demo
 
 Deployed link : https://sorabhr47.github.io/Tm-system1/
