@@ -41,7 +41,8 @@ To deploy this project run
 - Team members profile 
 - Search by date 
 - Bin option
-- responsive sidebar options 
+- responsive sidebar options
+- Authorisation 
 
 
 ## Media source
